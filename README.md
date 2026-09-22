@@ -10,14 +10,14 @@ Rename any weapon in the RedM weapon wheel. Standalone, no framework needed, cli
 
 ## Config
 
+All 72 weapons supported by VORP are already listed in `config.lua`. Fill in a name to rename a weapon, leave it empty to keep the game name.
+
 ```lua
-Config.Names = {
-    WEAPON_REVOLVER_NAVY = 'Army Revolver',
-    WEAPON_REVOLVER_CATTLEMAN = 'Peacemaker',
-}
+WEAPON_REVOLVER_NAVY      = 'Army Revolver',
+WEAPON_REVOLVER_CATTLEMAN = '',
 ```
 
-Left side is the weapon name, right side is the text shown in the wheel. Add as many lines as you want.
+Other weapons (RSG, custom lists) work too, just add a line with the weapon name.
 
 ## Good to know
 

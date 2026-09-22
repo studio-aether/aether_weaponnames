@@ -5,11 +5,13 @@ end
 local function apply()
     local done = true
     for weapon, label in pairs(Config.Names) do
-        local key = getNameKey(joaat(weapon))
-        if key and key ~= '' and key ~= 'WNS_INVALID' then
-            AddTextEntry(key, label)
-        else
-            done = false
+        if label ~= '' then
+            local key = getNameKey(joaat(weapon))
+            if key and key ~= '' and key ~= 'WNS_INVALID' then
+                AddTextEntry(key, label)
+            else
+                done = false
+            end
         end
     end
     return done
